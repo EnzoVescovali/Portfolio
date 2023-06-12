@@ -260,7 +260,6 @@ section {
   display: block;
   background-color: white;
   height: 3px;
-  /* transform: rotate(-45deg); */
   transform: rotate(45deg);
   position: absolute;
   animation: breakBarWidth forwards;
