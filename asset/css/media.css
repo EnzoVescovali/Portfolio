@@ -24,6 +24,7 @@
     left: 75%;
     transform: translateY(-50%);
     top: 1rem;
+    display: block;
   }
 
   .technoContainer {

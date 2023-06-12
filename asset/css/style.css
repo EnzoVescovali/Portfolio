@@ -157,6 +157,10 @@ section {
 }
 
 /* arrow */
+.arrowContainer {
+  display: none;
+}
+
 .arrow {
   display: block;
   background-color: #fff;
