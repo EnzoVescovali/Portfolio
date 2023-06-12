@@ -1,3 +1,7 @@
+.noScroll {
+  overflow: hidden;
+}
+
 h1,
 h2 {
   text-align: center;
@@ -43,7 +47,8 @@ section {
   display: none;
 }
 
-.cvContainer.active {
+.cvContainer.active,
+.cross.active {
   display: block;
 }
 
@@ -51,7 +56,8 @@ section {
   position: absolute;
   width: 650px;
   inset: 0;
-  margin: auto;
+  margin-block-start: 1rem;
+  margin-inline: auto;
   z-index: 1001;
 }
 
@@ -67,18 +73,34 @@ section {
   overflow: hidden;
 }
 
-.cvContainer::after {
-  content: "X";
+/* cross */
+.cross {
   position: absolute;
-  top: 2%;
-  right: 25%;
-  transform: translateX(-25%);
-  color: #fff;
-  z-index: 1002;
+  width: 1235px;
+  margin-block-start: 1rem;
   cursor: pointer;
-  font-size: 1.7rem;
+  z-index: 1002;
 }
 
+.cross::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 25px;
+  height: 3px;
+  top: 0;
+}
+
+.cross::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 25px;
+  height: 3px;
+  top: 0;
+}
 /* second section */
 .secondSection {
   background-color: black;

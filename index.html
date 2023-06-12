@@ -46,7 +46,11 @@
                 et découvrez mon expertise dans le développement web moderne
                 en tant que developpeur web junior.</p>
             <div class="cvContainer">
-                <img src="./asset/img/CV 2023 full screen.png" class="cv">
+                <div class="cv">
+                    <div class="cross"></div><img src="./asset/img/CV 2023 full screen.png">
+                </div>
+            </div>
+
             </div>
             <a href="#" class="cvButton">Voir mon CV</a>
         </section>
@@ -178,13 +182,23 @@
             })
         });
 
-        // button cv
+        // cv
         const cvButton = document.querySelector(".cvButton");
         const cv = document.querySelector(".cvContainer");
+        const cvCloseButton = document.querySelector(".cross");
 
         cvButton.addEventListener("click", () => {
-            cv.classList.toggle("active")
+            cv.classList.add("active");
+            cvCloseButton.classList.add("active");
+            document.body.classList.add("noScroll")
+        });
+
+        cvCloseButton.addEventListener("click", () => {
+            cv.classList.remove("active");
+            document.body.classList.remove("noScroll")
         })
+
+
 
 
     </script>
