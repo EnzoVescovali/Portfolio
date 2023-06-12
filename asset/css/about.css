@@ -1,0 +1,28 @@
+body {
+  background-color: #7f5283;
+  color: #fff;
+}
+
+nav {
+  background-color: #7f5283;
+}
+
+nav ul a {
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+main {
+  padding-block-start: 6rem;
+  padding-block-end: 5.1rem;
+  margin-inline: 1rem;
+}
+
+main p {
+  text-align: center;
+}

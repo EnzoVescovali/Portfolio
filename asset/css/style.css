@@ -1,0 +1,281 @@
+h1,
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-block-end: 2rem;
+}
+
+nav {
+  background-color: #fff;
+}
+
+section {
+  padding-block: 0.5rem;
+}
+
+/* first section */
+.firstSection {
+  text-align: center;
+  padding-block-start: 6rem;
+  padding-block-end: 5.1rem;
+}
+
+.welcomeTxt {
+  padding: 0.5rem;
+  min-width: 300px;
+  max-width: 800px;
+  margin-inline: auto;
+  margin-block-end: 2.5rem;
+}
+
+.cvButton {
+  color: #fff;
+  background-color: #7d2ae8;
+  padding: 1em 2em;
+}
+
+.cvButton:active {
+  padding: 0.9em 1.9em;
+}
+
+.cvContainer {
+  display: none;
+}
+
+.cvContainer.active {
+  display: block;
+}
+
+.cv {
+  position: absolute;
+  width: 650px;
+  inset: 0;
+  margin: auto;
+  z-index: 1001;
+}
+
+.cvContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.cvContainer::after {
+  content: "X";
+  position: absolute;
+  top: 2%;
+  right: 25%;
+  transform: translateX(-25%);
+  color: #fff;
+  z-index: 1002;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+/* second section */
+.secondSection {
+  background-color: black;
+  color: white;
+  margin-block-start: 2rem;
+}
+
+.technoContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+
+.techno {
+  display: flex;
+  gap: 4rem;
+  position: relative;
+  width: fit-content;
+}
+
+.technoLink {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  margin-block-start: 1rem;
+  padding: 1rem;
+  max-width: 900px;
+  min-width: 320px;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms, border 100ms;
+  transition-delay: 0s;
+}
+
+.description > div {
+  overflow: hidden;
+}
+
+.gridActive {
+  grid-template-rows: 1fr;
+  border: 3px solid white;
+  transition-delay: 1.3s;
+}
+
+/* arrow */
+.arrow {
+  display: block;
+  background-color: #fff;
+  width: 25px;
+  height: 3px;
+  position: relative;
+  animation: movingArrow 1s infinite;
+  display: none;
+}
+
+.techno:hover .arrow {
+  display: block;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  left: -5px;
+  background-color: #fff;
+}
+
+.arrow::after {
+  top: -4px;
+  transform: rotate(-45deg);
+}
+
+.arrow::before {
+  top: 4px;
+  transform: rotate(45deg);
+}
+
+.arrow.removeAnimation {
+  animation: movingArrow 0s;
+  display: block;
+}
+
+/* arrow animation */
+@keyframes movingArrow {
+  0%,
+  100% {
+    left: 0;
+  }
+  50% {
+    left: 10px;
+  }
+}
+@keyframes beforeArrow {
+  0% {
+    transform: rotate(45deg);
+    top: 4px;
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0);
+  }
+}
+
+.arrow.animating::before {
+  animation: beforeArrow forwards;
+  animation-duration: 500ms;
+}
+
+@keyframes afterArrow {
+  0% {
+    transform: rotate(-45deg);
+    top: -4px;
+  }
+
+  100% {
+    transform: rotate(0);
+    top: 0;
+  }
+}
+
+.arrow.animating::after {
+  animation: afterArrow forwards;
+  animation-duration: 500ms;
+}
+
+@keyframes breakBarWidth {
+  0% {
+    width: 0;
+    /* left: 0; */
+    right: 0;
+    top: 0;
+  }
+
+  100% {
+    width: 42px;
+    /* left: -39.5px; */
+    right: -35px;
+    top: 14.5px;
+  }
+}
+
+.breakBar.animating {
+  display: block;
+  background-color: white;
+  height: 3px;
+  /* transform: rotate(-45deg); */
+  transform: rotate(45deg);
+  position: absolute;
+  animation: breakBarWidth forwards;
+  animation-delay: 400ms;
+  animation-duration: 200ms;
+}
+
+.technoLink.animating::after {
+  content: "";
+  background-color: white;
+  height: 3px;
+  left: 0;
+  bottom: 30px;
+  position: absolute;
+  animation: widthLine 600ms;
+  animation-delay: 0.8s;
+}
+
+@keyframes widthLine {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+/* third section */
+.thirdSection {
+  background-color: #7d2ae8;
+  /* background-color: #7f5283; */
+  color: white;
+}
+
+.thirdSection p {
+  max-width: 1000px;
+  min-width: 300px;
+  margin-inline: auto;
+  padding-block-end: 2rem;
+}

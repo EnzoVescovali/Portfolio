@@ -1,0 +1,46 @@
+@media (width >= 630px) {
+  /* form */
+  .radio {
+    flex-direction: row;
+  }
+
+  .radioContainer {
+    gap: 1rem;
+  }
+
+  .radioContainer:first-child {
+    gap: 1rem;
+  }
+}
+
+@media (width > 900px) {
+  h1,
+  h2 {
+    margin-block-end: 3rem;
+  }
+
+  .arrowContainer {
+    position: absolute;
+    left: 75%;
+    transform: translateY(-50%);
+    top: 1rem;
+  }
+
+  .technoContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .formContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 1200px) {
+  .technoContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .formContainer {
+    gap: 4rem;
+  }
+}
