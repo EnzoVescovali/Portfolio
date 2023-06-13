@@ -33,7 +33,7 @@
     </header>
     <main>
         <h1>Me contacter</h1>
-        <form action="./traitement.php">
+        <form method="post">
             <div class="formContainer">
                 <div class="formItem">
                     <input type="text" name="nom" placeholder="Entrez votre nom..." required pattern="[A-Za-z-]{3,30}">
@@ -78,6 +78,24 @@
 
             <button type="submit">Envoyer</button>
         </form>
+
+<?php
+    if (isset($_POST["message"])){
+        $message = "Ce message vous a été envoyé via la page contact du portfolio
+        Nom: " . $_POST["nom"] . "
+        Prénom: " . $_POST["prenom"] . "
+        Email: " . $_POST["email"] . "
+        numéro de téléphone: " . $_POST["numero"] . "
+        A but: " . $_POST["A but"] . "
+        Objet:" . $_POST["objet"] . "
+        Message: " . $_POST["message"];
+    $retour = mail("vipe.entreprise@gmail.com", $_POST["objet"], $_message, "From:contact@exemplesite.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
+    if ($retour) {
+        echo " <p> l'email a bien été envoyé. ";
+        }
+    }
+?>
+
     </main>
     <footer>
         <div class="footerLinks">
