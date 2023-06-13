@@ -89,9 +89,10 @@
         A but: " . $_POST["A but"] . "
         Objet:" . $_POST["objet"] . "
         Message: " . $_POST["message"];
-    $retour = mail("vipe.entreprise@gmail.com", $_POST["objet"], $_message, "From:contact@exemplesite.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
+
+    $retour = mail("vipe.entreprise@gmail.com", $_POST["objet"], $message, "From:contact@exemplesite.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
     if ($retour) {
-        echo " <p> l'email a bien été envoyé. ";
+        echo "<p> l'email a bien été envoyé.</p>";
         }
     }
 ?>
