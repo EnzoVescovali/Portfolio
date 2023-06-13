@@ -36,42 +36,43 @@
         <form action="./traitement.php">
             <div class="formContainer">
                 <div class="formItem">
-                    <input type="text" placeholder="Entrez votre nom..." required pattern="[A-Za-z-]{3,30}">
+                    <input type="text" name="nom" placeholder="Entrez votre nom..." required pattern="[A-Za-z-]{3,30}">
                     <label>Nom</label>
                 </div>
                 <div class="formItem">
-                    <input type="text" placeholder="Entrez votre prénom..." required pattern="[A-Za-z-]{3,30}">
+                    <input type="text" name="prenom" placeholder="Entrez votre prénom..." required
+                        pattern="[A-Za-z-]{3,30}">
                     <label>Prénom</label>
                 </div>
                 <div class="formItem">
-                    <input type="email" placeholder="Entrez votre email..." required
+                    <input type="email" name="email" placeholder="Entrez votre email..." required
                         pattern="[A-Za-z0-9-._]+@[A-Za-z]+\.[A-Za-z]{2,}">
                     <label>Email</label>
                 </div>
                 <div class="formItem">
-                    <input type="number" placeholder="Entrez votre numéro de téléphone...">
+                    <input type="number" name="numero" placeholder="Entrez votre numéro de téléphone...">
                     <label>Numéro de téléphone</label>
                 </div>
                 <div class="formItem">
-                    <input type="text" placeholder="Entrez l'objet de votre message..." required>
+                    <input type="text" name="objet" placeholder="Entrez l'objet de votre message..." required>
                     <label>Objet</label>
                 </div>
                 <div class="formItem radio">
                     <div class="radioContainer">
                         <label for="firstRadio" class="radioLabel">Personnel</label>
-                        <input type="radio" name="radio" class="radioButton" id="firstRadio" required>
+                        <input type="radio" name="A but" class="radioButton" id="firstRadio">
                     </div>
 
                     <div class="radioContainer">
                         <label for="secondRadio" class="radioLabel">Professionnel</label>
-                        <input type="radio" name="radio" class="radioButton" id="secondRadio" required>
+                        <input type="radio" name="A but" class="radioButton" id="secondRadio">
                     </div>
 
                 </div>
             </div>
             <div class="formItem textareaContainer">
                 <label>Message</label>
-                <textarea cols="30" rows="3" placeholder="Ecrivez votre message..." required
+                <textarea name="message" cols="30" rows="3" placeholder="Ecrivez votre message..." required
                     class="textarea"></textarea>
             </div>
 
