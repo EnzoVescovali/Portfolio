@@ -31,6 +31,10 @@ form {
   margin-inline: 1rem;
 }
 
+label {
+  font-weight: 600;
+}
+
 label:not(.radioLabel) {
   position: absolute;
   top: -2rem;
