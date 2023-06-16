@@ -1,4 +1,6 @@
-/* form */
+html {
+  scrollbar-gutter: stable;
+}
 
 nav {
   background-color: #fff;
