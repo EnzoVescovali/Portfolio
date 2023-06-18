@@ -16,10 +16,18 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="mobileNav">
+                <a href="#">
+                    <img src="./asset/img/Logo.png" alt="Logo" style="width: 50px;">
+                </a>
+                <div class="burger" aria-expanded="false" aria-controls="navList">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <ul id="navList" data-visible="false">
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a href="#">Portfolio</a></li>
-                <a href="#">
+                <a href="#" class="logoLink">
                     <img src="./asset/img/Logo.png" alt="Logo" class="logo">
                 </a>
                 <li><a href="./about.html">A propos</a></li>
@@ -173,15 +181,27 @@
         const line = document.querySelectorAll(".technoLink");
         const icon = document.querySelector(".arrowContainer");
 
+        // animation for second section 
         buttons.forEach((button, index) => {
             button.addEventListener("click", () => {
+                links.forEach((link, i) => {
+                    if (i !== index) {
+                        link.classList.remove("gridActive");
+                        arrows[i].classList.remove("animating");
+                        breakbar[i].classList.remove("animating");
+                        line[i].classList.remove("animating");
+                        arrows[i].classList.remove("removeAnimation");
+                    }
+                });
+
                 links[index].classList.toggle("gridActive");
                 arrows[index].classList.toggle("animating");
                 breakbar[index].classList.toggle("animating");
                 line[index].classList.toggle("animating");
                 arrows[index].classList.toggle("removeAnimation");
-            })
+            });
         });
+
 
         // cv
         const cvButton = document.querySelector(".cvButton");
@@ -199,7 +219,22 @@
             document.body.classList.remove("noScroll")
         })
 
+        // nav Mobile
+        const burger = document.querySelector(".burger");
+        const navList = document.querySelector("#navList");
 
+        burger.addEventListener("click", () => {
+            const visibility = navList.getAttribute("data-visible");
+
+            if (visibility === "false") {
+                navList.setAttribute("data-visible", "true");
+                burger.setAttribute("aria-expanded", "true");
+            }
+            else if (visibility === "true") {
+                navList.setAttribute("data-visible", "false");
+                burger.setAttribute("aria-expanded", "false");
+            }
+        })
 
 
     </script>
