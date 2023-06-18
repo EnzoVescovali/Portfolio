@@ -14,6 +14,13 @@ h2 {
   margin-block-end: 2rem;
 }
 
+.bodyOverlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
 nav {
   background-color: #fff;
 }

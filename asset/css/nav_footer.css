@@ -16,8 +16,6 @@ header a {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
   margin-block-end: 2rem;
   position: fixed;
   width: 100%;

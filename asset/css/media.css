@@ -1,4 +1,13 @@
 @media (width >= 630px) {
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobileNav {
+    display: none;
+  }
+
   /* form */
   .radio {
     flex-direction: row;
@@ -43,5 +52,52 @@
 
   .formContainer {
     gap: 4rem;
+  }
+}
+
+@media (width <= 630px) {
+  /* phone navbar */
+  .mobileNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #navList {
+    position: absolute;
+    background-color: #fff;
+    flex-direction: column;
+    height: 100vh;
+    inset: 0 20% 0 0;
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+
+  #navList {
+    padding-block-start: 5rem;
+  }
+
+  .logoLink {
+    display: none;
+  }
+
+  .burger {
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  .burger > span {
+    height: 2px;
+    width: 20px;
+    background-color: #000;
+    display: block;
+  }
+
+  .burger span:not(:last-child) {
+    margin-block-end: 0.2rem;
+  }
+
+  #navList[data-visible="true"] {
+    transform: translateX(0);
   }
 }
