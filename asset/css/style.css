@@ -305,6 +305,7 @@ section {
 .thirdSection p {
   max-width: 1000px;
   min-width: 300px;
-  margin-inline: auto;
+  margin-inline: 1rem;
   padding-block-end: 2rem;
+  text-align: center;
 }
