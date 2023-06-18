@@ -305,14 +305,13 @@ section {
 /* third section */
 .thirdSection {
   background-color: #7d2ae8;
-  /* background-color: #7f5283; */
   color: white;
 }
 
 .thirdSection p {
   max-width: 1000px;
   min-width: 300px;
-  margin-inline: 1rem;
-  padding-block-end: 2rem;
+  margin-inline: auto;
+  padding: 2rem 1rem;
   text-align: center;
 }
