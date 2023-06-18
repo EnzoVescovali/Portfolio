@@ -100,4 +100,13 @@
   #navList[data-visible="true"] {
     transform: translateX(0);
   }
+
+  /* second section animation time */
+  .technoLink.animating::after {
+    animation: none;
+  }
+
+  .description {
+    transition: grid-template-rows 300ms, border 100ms;
+  }
 }

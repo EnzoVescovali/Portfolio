@@ -259,14 +259,12 @@ section {
 @keyframes breakBarWidth {
   0% {
     width: 0;
-    /* left: 0; */
     right: 0;
     top: 0;
   }
 
   100% {
     width: 42px;
-    /* left: -39.5px; */
     right: -35px;
     top: 14.5px;
   }
@@ -303,6 +301,7 @@ section {
     width: 100%;
   }
 }
+
 /* third section */
 .thirdSection {
   background-color: #7d2ae8;
