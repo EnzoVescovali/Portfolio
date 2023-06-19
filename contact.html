@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -19,19 +19,25 @@
     <header>
         <nav>
             <ul class="mobileNav">
-                <a href="#" class="mobileLogo">
-                    <img src="./asset/img/Logo.png" alt="Logo" style="width: 50px;">
-                </a>
-                <div class="burger" aria-expanded="false" aria-controls="navList">
-                    <span></span><span></span><span></span>
-                </div>
+                <li>
+                    <a href="#" class="mobileLogo">
+                        <img src="./asset/img/Logo.png" alt="Logo" style="width: 50px;">
+                    </a>
+                </li>
+                <li>
+                    <div class="burger" role="button" aria-expanded="false" aria-controls="navList">
+                        <span></span><span></span><span></span>
+                    </div>
+                </li>
             </ul>
             <ul id="navList" data-visible="false">
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a href="#">Portfolio</a></li>
-                <a href="#" class="logoLink">
-                    <img src="./asset/img/Logo.png" alt="Logo" class="logo">
-                </a>
+                <li>
+                    <a href="index.html" class="logoLink">
+                        <img src="./asset/img/Logo.png" alt="Logo" class="logo">
+                    </a>
+                </li>
                 <li><a href="./about.html">A propos</a></li>
                 <li><a href="./contact.html">Contacter</a></li>
             </ul>
