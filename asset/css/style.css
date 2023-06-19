@@ -1,7 +1,3 @@
-html {
-  scrollbar-gutter: stable;
-}
-
 .noScroll {
   overflow: hidden;
 }
@@ -23,6 +19,11 @@ h2 {
 
 nav {
   background-color: #fff;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
 }
 
 section {
