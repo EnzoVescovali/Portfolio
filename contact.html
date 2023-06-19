@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="author" content="Enzo Vescovali">
     <meta name="description" content="Portfolio de développeur front-end débutant">
     <meta name="keywords" content="développeur, front-end, débutant, portfolio, Enzo Vescovali, Vipe">
@@ -17,20 +18,23 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="mobileNav">
+                <a href="#" class="mobileLogo">
+                    <img src="./asset/img/Logo.png" alt="Logo" style="width: 50px;">
+                </a>
+                <div class="burger" aria-expanded="false" aria-controls="navList">
+                    <span></span><span></span><span></span>
+                </div>
+            </ul>
+            <ul id="navList" data-visible="false">
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a href="#">Portfolio</a></li>
-                <a href="#">
+                <a href="#" class="logoLink">
                     <img src="./asset/img/Logo.png" alt="Logo" class="logo">
                 </a>
                 <li><a href="./about.html">A propos</a></li>
                 <li><a href="./contact.html">Contacter</a></li>
             </ul>
-            <div class="burger&">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
     </header>
     <main>
