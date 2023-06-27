@@ -18,7 +18,7 @@ h2 {
 }
 
 nav {
-  background-color: #fff;
+  background-color: var(--clr-neutral-lgt);
 }
 
 .logo {
@@ -45,14 +45,33 @@ section {
   margin-block-end: 2.5rem;
 }
 
+.flexBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .cvButton {
-  color: #fff;
-  background-color: #7d2ae8;
+  color: var(--clr-neutral-lgt);
+  background-color: var(--clr-primary);
   padding: 1em 2em;
+  border-radius: var(--br-btn);
 }
 
 .cvButton:active {
   padding: 0.9em 1.9em;
+}
+
+.downloadBtn {
+  border: 2px solid var(--clr-primary);
+  padding: 0.9em 1.5em;
+  transition: 0.3s ease-out;
+}
+
+.downloadBtn:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-lgt);
 }
 
 .cvContainer {
@@ -97,7 +116,7 @@ section {
 
 .cross::before {
   content: "";
-  background-color: #000;
+  background-color: var(--clr-neutral-drk);
   position: absolute;
   transform: rotate(45deg);
   width: 25px;
@@ -107,7 +126,7 @@ section {
 
 .cross::after {
   content: "";
-  background-color: #000;
+  background-color: var(--clr-neutral-drk);
   position: absolute;
   transform: rotate(-45deg);
   width: 25px;
@@ -116,8 +135,8 @@ section {
 }
 /* second section */
 .secondSection {
-  background-color: black;
-  color: white;
+  background-color: var(--clr-neutral-drk);
+  color: var(--clr-neutral-lgt);
   margin-block-start: 2rem;
 }
 
@@ -136,7 +155,7 @@ section {
 }
 
 .technoLink {
-  color: white;
+  color: var(--clr-neutral-lgt);
   font-weight: bold;
   cursor: pointer;
   width: fit-content;
@@ -165,7 +184,7 @@ section {
 
 .gridActive {
   grid-template-rows: 1fr;
-  border: 3px solid white;
+  border: 3px solid #fff;
   transition-delay: 1.3s;
 }
 
@@ -176,7 +195,7 @@ section {
 
 .arrow {
   display: block;
-  background-color: #fff;
+  background-color: var(--clr-neutral-lgt);
   width: 25px;
   height: 3px;
   position: relative;
@@ -195,7 +214,7 @@ section {
   width: 14px;
   height: 3px;
   left: -5px;
-  background-color: #fff;
+  background-color: var(--clr-neutral-lgt);
 }
 
 .arrow::after {
@@ -273,7 +292,7 @@ section {
 
 .breakBar.animating {
   display: block;
-  background-color: white;
+  background-color: var(--clr-neutral-lgt);
   height: 3px;
   transform: rotate(45deg);
   position: absolute;
@@ -284,7 +303,7 @@ section {
 
 .technoLink.animating::after {
   content: "";
-  background-color: white;
+  background-color: var(--clr-neutral-lgt);
   height: 3px;
   left: 0;
   bottom: 30px;
@@ -305,8 +324,8 @@ section {
 
 /* third section */
 .thirdSection {
-  background-color: #7d2ae8;
-  color: white;
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-lgt);
 }
 
 .thirdSection p {

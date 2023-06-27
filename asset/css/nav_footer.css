@@ -2,13 +2,12 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.125rem;
-  /* font-family: Roboto, sans-serif; */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--ff-primary);
 }
 
 /* nav */
 header a {
-  color: black;
+  color: var(--clr-neutral-drk);
 }
 
 .logo {
@@ -40,8 +39,8 @@ footer {
   justify-content: center;
   align-items: center;
   margin-block-start: auto;
-  background-color: black;
-  color: white;
+  background-color: var(--clr-neutral-drk);
+  color: var(--clr-neutral-lgt);
 }
 
 .footerLinks {
@@ -53,7 +52,7 @@ footer {
 }
 
 footer a {
-  color: white;
+  color: var(--clr-primary);
   position: relative;
 }
 
@@ -76,7 +75,7 @@ footer a::before {
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-color: #7d2ae8;
+  background-color: var(--clr-neutral-lgt);
   position: absolute;
   border-radius: 50%;
 }
@@ -89,7 +88,7 @@ footer a::after {
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  border: 1px solid #7d2ae8;
+  border: 1px solid var(--clr-neutral-lgt);
   position: absolute;
   border-radius: 50%;
 }

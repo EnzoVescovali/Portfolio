@@ -1,14 +1,14 @@
 body {
-  background-color: #7d2ae8;
-  color: #fff;
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-lgt);
 }
 
 nav {
-  background-color: #7d2ae8;
+  background-color: var(--clr-primary);
 }
 
 nav ul a {
-  color: #fff;
+  color: var(--clr-neutral-lgt);
 }
 
 h1 {

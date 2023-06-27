@@ -1,0 +1,10 @@
+:root {
+  --clr-neutral-lgt: #fff;
+  --clr-neutral-drk: #333333;
+
+  --clr-primary: #8a2be2;
+
+  --br-btn: 4px;
+
+  --ff-primary: "Roboto", sans-serif;
+}

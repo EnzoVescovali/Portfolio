@@ -20,6 +20,73 @@
   .radioContainer:first-child {
     gap: 1rem;
   }
+
+  .flexBtn {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (width <= 630px) {
+  /* phone navbar */
+  .mobileNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 1rem;
+  }
+
+  #navList {
+    position: absolute;
+    background-color: var(--clr-neutral-lgt);
+    flex-direction: column;
+    height: 100vh;
+    inset: 0 20% 0 0;
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+
+  #navList {
+    padding-block-start: 5rem;
+  }
+
+  .logoLink {
+    display: none;
+  }
+
+  .burger {
+    cursor: pointer;
+    z-index: 99999;
+  }
+
+  .burger > span {
+    height: 2px;
+    width: 20px;
+    background-color: var(--clr-neutral-drk);
+    display: block;
+  }
+
+  .burger span:not(:last-child) {
+    margin-block-end: 0.2rem;
+  }
+
+  #navList[data-visible="true"] {
+    transform: translateX(0);
+  }
+
+  /* phone navbar in about page */
+  nav ul a {
+    color: var(--clr-neutral-drk);
+  }
+
+  /* second section animation time */
+  .technoLink.animating::after {
+    animation: none;
+  }
+
+  .description {
+    transition: grid-template-rows 300ms, border 100ms;
+  }
 }
 
 @media (width > 900px) {
@@ -52,62 +119,5 @@
 
   .formContainer {
     gap: 4rem;
-  }
-}
-
-@media (width <= 630px) {
-  /* phone navbar */
-  .mobileNav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-inline: 1rem;
-  }
-
-  #navList {
-    position: absolute;
-    background-color: #fff;
-    flex-direction: column;
-    height: 100vh;
-    inset: 0 20% 0 0;
-    transform: translateX(-100%);
-    transition: 0.3s;
-  }
-
-  #navList {
-    padding-block-start: 5rem;
-  }
-
-  .logoLink {
-    display: none;
-  }
-
-  .burger {
-    cursor: pointer;
-    z-index: 99999;
-  }
-
-  .burger > span {
-    height: 2px;
-    width: 20px;
-    background-color: #000;
-    display: block;
-  }
-
-  .burger span:not(:last-child) {
-    margin-block-end: 0.2rem;
-  }
-
-  #navList[data-visible="true"] {
-    transform: translateX(0);
-  }
-
-  /* second section animation time */
-  .technoLink.animating::after {
-    animation: none;
-  }
-
-  .description {
-    transition: grid-template-rows 300ms, border 100ms;
   }
 }

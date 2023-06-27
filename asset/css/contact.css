@@ -1,5 +1,5 @@
 nav {
-  background-color: #fff;
+  background-color: var(--clr-neutral-lgt);
 }
 
 main {
@@ -47,7 +47,7 @@ input {
 }
 
 input:focus + label {
-  color: #7d2ae8;
+  color: var(--clr-primary);
 }
 
 input:required + label::after {
@@ -121,11 +121,12 @@ input[type="number"] {
 
 button {
   border: none;
-  background-color: #7d2ae8;
+  background-color: var(--clr-primary);
   padding: 0.7em 2.4em;
-  color: #fff;
+  color: var(--clr-neutral-lgt);
   cursor: pointer;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: var(--br-btn);
 }
