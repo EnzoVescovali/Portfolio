@@ -67,6 +67,7 @@ section {
   border: 2px solid var(--clr-primary);
   padding: 0.9em 1.5em;
   transition: 0.3s ease-out;
+  border-radius: var(--br-btn);
 }
 
 .downloadBtn:hover {
