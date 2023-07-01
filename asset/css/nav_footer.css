@@ -44,11 +44,11 @@ footer {
 }
 
 .footerLinks {
-  padding-block: 2rem 2rem;
+  padding-block: 3rem 2rem;
 }
 
 .footerLinks a:not(:last-child) {
-  margin-inline-end: 4rem;
+  margin-inline-end: 5rem;
 }
 
 footer a {
@@ -74,10 +74,10 @@ footer a::before {
   width: 45px;
   bottom: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%) rotate(45deg);
   background-color: var(--clr-neutral-lgt);
   position: absolute;
-  border-radius: 50%;
+  border-radius: var(--br-btn);
 }
 
 footer a::after {
@@ -87,10 +87,10 @@ footer a::after {
   width: 55px;
   bottom: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%) rotate(45deg);
   border: 1px solid var(--clr-neutral-lgt);
   position: absolute;
-  border-radius: 50%;
+  border-radius: var(--br-btn);
 }
 
 .copyright {
