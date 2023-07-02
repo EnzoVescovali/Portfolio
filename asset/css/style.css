@@ -2,6 +2,13 @@
   overflow: hidden;
 }
 
+.bodyOverlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
 h1,
 h2 {
   text-align: center;
@@ -10,20 +17,8 @@ h2 {
   margin-block-end: 2rem;
 }
 
-.bodyOverlay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  overflow: hidden;
-  transition: 0.3s;
-}
-
 nav {
   background-color: var(--clr-neutral-lgt);
-}
-
-.logo {
-  margin: 0;
-  padding: 0;
 }
 
 section {
@@ -134,11 +129,13 @@ section {
   height: 3px;
   top: 0;
 }
+
 /* second section */
 .secondSection {
   background-color: var(--clr-neutral-drk);
   color: var(--clr-neutral-lgt);
   margin-block-start: 2rem;
+  padding-inline: 0.5rem;
 }
 
 .technoContainer {
@@ -233,7 +230,7 @@ section {
   display: block;
 }
 
-/* arrow animation */
+/* animations */
 @keyframes movingArrow {
   0%,
   100% {
