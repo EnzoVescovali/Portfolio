@@ -101,9 +101,9 @@ input[type="number"] {
 }
 
 .radioContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
   width: fit-content;
 }
 
