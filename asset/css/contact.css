@@ -125,12 +125,17 @@ button {
   padding: 0.8em 1.5em;
   color: var(--clr-neutral-lgt);
   cursor: pointer;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   border-radius: var(--br-btn);
 }
 
-.fa-paper-plane {
+.btnContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.fa-paper-plane,
+.fa-trash {
   margin-inline-end: 1rem;
 }
