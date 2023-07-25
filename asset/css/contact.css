@@ -139,3 +139,15 @@ button {
 .fa-trash {
   margin-inline-end: 1rem;
 }
+
+.resetBtn {
+  color: var(--clr-primary);
+  background-color: transparent;
+  border: 2px solid var(--clr-primary);
+  transition: 0.3s ease-out;
+}
+
+.resetBtn:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-lgt);
+}
