@@ -176,6 +176,26 @@ section {
   transition-delay: 0s;
 }
 
+.description p {
+  margin-block-end: 1rem;
+}
+
+.btnContainer {
+  padding-block-end: 1rem;
+}
+
+.projectBtn {
+  color: var(--clr-primary);
+  background-color: var(--clr-neutral-lgt);
+  padding: 0.8em 1em;
+  border-radius: var(--br-btn);
+}
+
+.fa-eye,
+.fa-download {
+  margin-inline-end: 0.5rem;
+}
+
 .description > div {
   overflow: hidden;
 }
