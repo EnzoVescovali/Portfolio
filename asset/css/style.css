@@ -52,10 +52,11 @@ section {
   background-color: var(--clr-primary);
   padding: 1em 2em;
   border-radius: var(--br-btn);
+  transition: 0.3s ease-out;
 }
 
-.cvButton:active {
-  padding: 0.9em 1.9em;
+.cvButton:hover {
+  border-radius: 35px;
 }
 
 .downloadBtn {
@@ -68,6 +69,7 @@ section {
 .downloadBtn:hover {
   background-color: var(--clr-primary);
   color: var(--clr-neutral-lgt);
+  border-radius: 35px;
 }
 
 .cvContainer {
