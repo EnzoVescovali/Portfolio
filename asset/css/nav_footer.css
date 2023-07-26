@@ -32,28 +32,6 @@ ul {
   gap: 3rem;
 }
 
-/* nav animation */
-.navList li {
-  position: relative;
-}
-
-.navList li:not(.logoItem)::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  background-color: var(--clr-neutral-drk);
-  bottom: 0;
-  right: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.navList li:hover::after {
-  width: 100%;
-  left: 0;
-  right: auto;
-}
-
 /* footer */
 footer {
   display: flex;
