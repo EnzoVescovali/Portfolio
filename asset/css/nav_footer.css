@@ -32,6 +32,28 @@ ul {
   gap: 3rem;
 }
 
+/* nav animation */
+.navList li {
+  position: relative;
+}
+
+.navList li:not(.logoItem)::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: var(--clr-neutral-drk);
+  bottom: 0;
+  right: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.navList li:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
 /* footer */
 footer {
   display: flex;
@@ -63,8 +85,9 @@ footer a i {
   font-size: 1.1rem;
 }
 
-footer a:hover i {
-  transform: translateY(-3px) scale(1.1);
+footer a:hover::before,
+footer a:hover::after {
+  border-radius: 50%;
 }
 
 footer a::before {
@@ -78,6 +101,8 @@ footer a::before {
   background-color: var(--clr-neutral-lgt);
   position: absolute;
   border-radius: var(--br-btn);
+
+  transition: 0.3s ease-in-out;
 }
 
 footer a::after {
@@ -91,6 +116,8 @@ footer a::after {
   border: 1px solid var(--clr-neutral-lgt);
   position: absolute;
   border-radius: var(--br-btn);
+
+  transition: 0.3s ease-in-out;
 }
 
 .copyright {
