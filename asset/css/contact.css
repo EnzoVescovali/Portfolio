@@ -126,6 +126,11 @@ button {
   color: var(--clr-neutral-lgt);
   cursor: pointer;
   border-radius: var(--br-btn);
+  transition: 0.3s ease-out;
+}
+
+button:hover {
+  border-radius: 35px;
 }
 
 .btnContainer {

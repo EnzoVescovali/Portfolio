@@ -1,3 +1,11 @@
+html:not(footer) {
+  scrollbar-gutter: stable;
+}
+
+footer {
+  scrollbar-gutter: ;
+}
+
 body {
   background-color: var(--clr-primary);
   color: var(--clr-neutral-lgt);
