@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 600px;
+    width: fit-content;
+    /* margin: auto; */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    padding-block: 1rem;
+    border-radius: 100px;
+    margin-block-start: 1rem;
+    background: rgba(255,255,255,.75);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,.4);
+    box-shadow: 0 4px 20px rgba(0,0,0,.06);
+    position: fixed;
+
+    a {
+            color: #000;
+        }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        
+    }   
+}
