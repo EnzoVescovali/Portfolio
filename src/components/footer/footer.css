@@ -1,0 +1,9 @@
+footer {
+    background-color: var(--primary-clr);
+    color: #fff;
+    text-align: center;
+
+    span {
+        color: var(--secondary-clr);
+    }
+}
