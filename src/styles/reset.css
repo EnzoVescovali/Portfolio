@@ -23,6 +23,10 @@ body {
   height: 100%;
 }
 
+:root {
+  --nav-height: 64px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,6 +34,7 @@ html {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.6;
+  padding-top: var(--nav-height);
 }
 
 img,

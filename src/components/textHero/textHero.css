@@ -1,0 +1,13 @@
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    padding-block: 4rem 1rem;
+    /* font-family: "Inter", sans-serif; */
+    /* font-family: "Sora", sans-serif; */
+
+    .typed-cursor {
+        font-weight: 100;
+    }
+}

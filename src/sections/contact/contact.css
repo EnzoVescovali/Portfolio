@@ -1,0 +1,159 @@
+.sectionContact {
+    margin-block: 2rem 3rem;
+}
+
+form {
+  min-width: 200px;
+  max-width: 1300px;
+  margin-inline: auto;
+  margin-block: 4rem 3rem;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-inline: 1rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+label:not(.radioLabel) {
+  position: absolute;
+  top: -2rem;
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+input {
+  display: grid;
+  border: none;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  margin-block-end: 2rem;
+}
+
+input:focus + label {
+  color: var(--clr-primary);
+}
+
+input:required + label::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+.textareaContainer {
+  margin-block-start: 4rem;
+  margin-inline: 1rem;
+}
+
+textarea {
+  resize: none;
+  border: 2px solid #000;
+  width: 100%;
+  margin-block-end: 2rem;
+}
+
+textarea:focus {
+  border: 2px solid #7d2ae8;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  padding-inline: 0.3rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #7d2ae8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.radioContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+  width: fit-content;
+}
+
+.radioContainer:first-child {
+  gap: 4.75rem;
+}
+
+.radioContainer > * {
+  margin-block: auto;
+}
+
+.formItem {
+  position: relative;
+}
+
+button {
+  border: none;
+  background-color: var(--clr-primary);
+  padding: 0.8em 1.5em;
+  color: var(--clr-neutral-lgt);
+  cursor: pointer;
+  border-radius: var(--br-btn);
+  transition: 0.3s ease-out;
+}
+
+button:hover {
+  border-radius: 35px;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.fa-paper-plane,
+.fa-trash {
+  margin-inline-end: 1rem;
+}
+
+.resetBtn {
+  color: var(--clr-primary);
+  background-color: transparent;
+  border: 2px solid var(--clr-primary);
+  transition: 0.3s ease-out;
+}
+
+.resetBtn:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-lgt);
+}
+
+@media (width > 900px) {
+  .formContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 1200px) {
+  .formContainer {
+    gap: 4rem;
+  }
+}

@@ -9,11 +9,17 @@ const Footer = () => {
   return (
     <footer>
       <div className="icons">
-        <FontAwesomeIcon icon={faGithubAlt} />
-        <FontAwesomeIcon icon={faLinkedinIn} />
-        <FontAwesomeIcon icon={faBehance} />
+          <a href="https://github.com/EnzoVescovali" target="_blank" rel="noopener noreferrer" className="icon">
+            <FontAwesomeIcon icon={faGithubAlt} size="xl"/>
+          </a>
+          <a href="https://www.linkedin.com/in/enzovescovali" target="_blank" rel="noopener noreferrer" className="icon">
+            <FontAwesomeIcon icon={faLinkedinIn} size="xl"/>
+          </a>
+          <a href="https://www.behance.net/vipedzn" target="_blank" rel="noopener noreferrer" className="icon">
+            <FontAwesomeIcon icon={faBehance} size="xl"/>
+          </a>
       </div>
-      <p>© 2024 <span className="footerPseudo">Vipe</span> . All rights reserved.</p>
+      <p>© 2024 <span className="footerPseudo">Vipe</span>. All rights reserved.</p>
     </footer>
   )
 }

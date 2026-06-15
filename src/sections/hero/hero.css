@@ -1,0 +1,29 @@
+p {
+    max-width: 100ch;
+    margin: auto;
+    padding-block: 2rem;
+    text-align: center;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    padding-block: 2rem;
+    gap: 2rem;
+
+    a {
+        padding: 0.7em 1.5em;
+        cursor: pointer;
+
+        &:first-child {
+            background-color: var(--secondary-clr);
+            color: #fff;
+            border: none;
+        }
+
+        &:nth-child(2) {
+            background-color: #fff;
+            border: 2px solid var(--secondary-clr);
+        }
+    }
+}

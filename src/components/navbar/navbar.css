@@ -4,27 +4,51 @@ nav {
     align-items: center;
     min-width: 600px;
     width: fit-content;
-    /* margin: auto; */
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
+    top: 10px;
+    z-index: 1000;
     font-size: 1.1rem;
     padding-block: 1rem;
+    display: flex;
+    align-items: center;
     border-radius: 100px;
-    margin-block-start: 1rem;
     background: rgba(255,255,255,.75);
     backdrop-filter: blur(16px);
     border: 1px solid rgba(255,255,255,.4);
     box-shadow: 0 4px 20px rgba(0,0,0,.06);
-    position: fixed;
+    scrollbar-gutter: stable;
 
     a {
-            color: #000;
-        }
+        color: #000;
+    }
 
     ul {
         display: flex;
         flex-direction: row;
         gap: 2rem;
-        
+
+        li {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                border-radius: 2px;
+                background-color: var(--secondary-clr);
+                bottom: -5px;
+                right: 0;
+                transition: 0.3s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+                left: 0;
+                right: auto;
+            }
+        }
     }   
 }

@@ -1,13 +1,19 @@
 import React from 'react'
-import Navbar from './components/navbar/navbar'
-import Projects from './components/projects/projects'
 import "./styles/reset.css"
+import Navbar from './components/navbar/navbar'
+import Footer from './components/footer/footer'
+import Hero from './sections/hero/hero'
+import Projects from './sections/projects/projects'
+import Contact from './sections/contact/contact'
 
 const App = () => {
   return (
     <>
       <Navbar/>
+      <Hero/>
       <Projects/>
+      <Contact/>
+      <Footer/>
     </>
   )
 }
