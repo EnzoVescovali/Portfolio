@@ -6,17 +6,18 @@ const navbar = () => {
   return (
     <>
         <nav>
-            <a href="">Vipe</a>
+            <NavLink to="/" className="logo">
+                Vipe
+            </NavLink>
             <ul>
                 <li>
-                    <a href="">Accueil</a>
+                    <a href="#hero">Accueil</a>
                 </li>
                 <li>
-                    {/* <a href="#projets">Projets</a> */}
-                    <NavLink to="/projects">Projets</NavLink>
+                    <a href="#projects">Projets</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
