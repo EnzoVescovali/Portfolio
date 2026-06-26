@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Kasa",
+        "image": "../public/kasa.png",
+        "link": "https://github.com/EnzoVescovali/Kasa",
+        "tag":["React"]
+    },
+    {
+        "id": 2,
+        "title": "Ohmyfood",
+        "image": "../public/ohmyfood.png",
+        "link": "https://github.com/EnzoVescovali/ohmyfoodOnline",
+        "tag":["Css", "Animation"]
+    },
+    {
+        "id": 3,
+        "title": "Kasa",
+        "image": "../public/kasa.png",
+        "link": "https://github.com/EnzoVescovali/Kasa",
+        "tag":["React"]
+    }
+]
