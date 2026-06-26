@@ -5,6 +5,8 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faBehance } from '@fortawesome/free-brands-svg-icons'
 import './footer.css'
 
+const year = new Date().getFullYear()
+
 const Footer = () => {
   return (
     <footer>
@@ -19,7 +21,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faBehance} size="xl"/>
           </a>
       </div>
-      <p>© 2024 <span className="footerPseudo">Vipe</span>. All rights reserved.</p>
+      <p>©{year} <span className="footerPseudo">Vipe</span>. All rights reserved.</p>
     </footer>
   )
 }
