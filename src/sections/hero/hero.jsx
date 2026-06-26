@@ -17,8 +17,21 @@ const hero = () => {
               Explorez mes projets et découvrez mon approche du développement web en tant que développeur junior, entre design, performance et souci du détail.
           </p>
           <div className="buttonsContainer">
-              <a href="" className='btn btnPrimary'>Voir mon CV <FontAwesomeIcon icon={faEye} size="xl" className='heroIcon'/> </a>
-              <a href="" download className='btn btnSecondary' data-text="Télécharger mon CV">Télécharger mon CV <FontAwesomeIcon icon={faDownload} size="xl" className='heroIcon'/> </a>
+              <a href="" className='btn btnPrimary'>
+                <span className="txtBtn">Voir mon CV</span> 
+                <FontAwesomeIcon icon={faEye} size="xl" className='heroIcon'/> 
+              </a>
+
+              <a href="" download className='btn btnSecondary'>
+                <span className="btnContent btnDefault">
+                  Telecharger mon CV 
+                  <FontAwesomeIcon icon={faDownload} size="xl" className='heroIcon'/>
+                </span>
+                <span className="btnContent btnHover" aria-hidden="true">
+                  Telecharger mon CV 
+                  <FontAwesomeIcon icon={faDownload} size="xl" className='heroIcon'/>
+                </span>
+              </a>
           </div>
         </section>
     </>
