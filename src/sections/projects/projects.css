@@ -2,10 +2,26 @@
     background-color: var(--primary-clr);
     color: #fff;
     margin-block-start: 2rem;
-    padding-block: 1rem;
+    padding-block: 1rem;    
+}
+
+.cardsContainer {
+    display: grid;
+    gap: 2rem;
+    padding-inline: 1.5rem;
+    padding-block: 4rem 2rem;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
 }
 
 h2 {
     text-align: center;
     font-size: 1.4rem;
+}
+
+@media (width >= 768px) {
+    .cardsContainer  {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
