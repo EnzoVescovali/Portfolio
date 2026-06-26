@@ -18,8 +18,14 @@ const hero = () => {
           </p>
           <div className="buttonsContainer">
               <a href="" className='btn btnPrimary'>
-                <span className="txtBtn">Voir mon CV</span> 
-                <FontAwesomeIcon icon={faEye} size="xl" className='heroIcon'/> 
+                <span className="btnContent btnDefault">
+                  Voir mon CV
+                  <FontAwesomeIcon icon={faEye} size="xl" className='heroIcon'/>
+                </span>
+                <span className="btnContent btnHover" aria-hidden="true">
+                  Voir mon CV
+                  <FontAwesomeIcon icon={faEye} size="xl" className='heroIcon'/>
+                </span>
               </a>
 
               <a href="" download className='btn btnSecondary'>
