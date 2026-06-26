@@ -1,0 +1,101 @@
+article {
+    padding: 1rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+    &:hover {
+        transform: translateY(-6px);
+        border-color: var(--secondary-clr);
+    }
+
+    &:hover .test::before {
+        width: 100%;
+        left: 0;
+    }
+
+    &:hover .imgWrapper::after {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    &:hover .tags span {
+    border-color: rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.12);
+}
+}
+
+.imgWrapper {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "Voir le projet →";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 20%);
+        color: white;
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+        opacity: 0;
+        transition: all 0.35s ease;
+        background: rgba(18, 19, 21, 0.6);
+        padding: 8px 14px;
+        border-radius: 999px;
+        backdrop-filter: blur(6px);
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0  0;
+    }
+
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+
+    span {
+        border: 1px solid var(--secondary-clr);
+        padding: .1rem 1rem;
+        border-radius: 20px;
+        color: #fff;
+    }
+}
+
+.test {
+        padding-inline-start: .5rem;
+        padding-block: 1rem;
+        border-radius: 0 0 15px 15px;
+        position: relative;
+
+        h3 {
+            color: #fff;
+            padding-inline-start: .3rem;
+            margin-block-end: .7rem ;
+            z-index: 2;
+            position: relative;
+        }
+        
+        * {
+            z-index: 2;
+        }
+
+        &::before {
+            content: "";
+            width: 0%;
+            right:0;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--secondary-clr) 0%,#4a22b0 100%);
+            position: absolute;
+            z-index: 0;
+            transition: 0.4s ease-in-out;
+            top: 0;
+            border-radius: 0 0 15px 15px;
+        }
+}
