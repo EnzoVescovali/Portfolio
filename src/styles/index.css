@@ -9,3 +9,7 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
+#projects, #contact {
+  scroll-margin-top: 5rem;
+}
