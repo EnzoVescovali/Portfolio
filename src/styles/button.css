@@ -1,15 +1,13 @@
 .btn {
     padding: 0.7em 1.5em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btnPrimary {
-  background-color: var(--secondary-clr);
-  color: white;
-}
-
-.btnSecondary {
-    border: 1px solid var(--secondary-clr);
-    color: var(--secondary-clr);
+    background-color: var(--secondary-clr);
+    color: white;
     position: relative;
     overflow: hidden;
     transition: border-radius 0.3s ease-in-out;
@@ -19,30 +17,16 @@
         transition-delay: 0.3s;
     }
 
-    .btn:not(:hover)::after {
-        transition-delay: 0s;
-    }
-
-    &::before {
-        content: attr(data-text);
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, 50%);
-        opacity: 0;
-        color: #fff;
-        white-space: nowrap;
+    .txtBtn,
+    .heroIcon {
+        position: relative;
         z-index: 2;
-        transition:
-        opacity 0.2s ease-in-out,
-        transform 0.3s ease-in-out;
+        animation: btnPrimaryTextSlideReverse 0.5s ease-in-out both;
     }
 
-    &:hover::before {
-        transform: translate(-50%, -50%);
-        opacity: 1;
-        transition-delay: 0.2s;
-
+    &:hover .txtBtn,
+    &:hover .heroIcon {
+        animation: btnPrimaryTextSlide 0.5s ease-in-out both;
     }
 
     &::after {
@@ -53,6 +37,7 @@
         background-color: var(--primary-clr);
         top: 0;
         right: 0;
+        z-index: 1;
         transition: 0.3s ease-in-out;
     }
 
@@ -60,6 +45,119 @@
         width: 100%;
         left: 0;
         right: auto;
-    }   
+    }
 }
 
+@keyframes btnPrimaryTextSlide {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    45% {
+        transform: translateY(120%);
+        opacity: 0;
+    }
+
+    55% {
+        transform: translateY(120%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes btnPrimaryTextSlideReverse {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    45% {
+        transform: translateY(120%);
+        opacity: 0;
+    }
+
+    55% {
+        transform: translateY(120%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btnSecondary {
+    border: 1px solid var(--secondary-clr);
+    color: var(--secondary-clr);
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    overflow: hidden;
+    transition: border-radius 0.3s ease-in-out;
+
+    &:hover {
+        border-radius: 22px;
+        transition-delay: 0.3s;
+    }
+
+    .btnContent {
+        grid-area: 1 / 1;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        white-space: nowrap;
+        transition:
+            opacity 0.2s ease-in-out,
+            transform 0.3s ease-in-out;
+    }
+
+    .btnDefault {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: 0.15s;
+    }
+
+    .btnHover {
+        transform: translateY(120%);
+        opacity: 0;
+        color: #fff;
+        transition-delay: 0s;
+    }
+
+    &:hover .btnDefault {
+        transform: translateY(120%);
+        opacity: 0;
+        transition-delay: 0s;
+    }
+
+    &:hover .btnHover {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: 0.2s;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background-color: var(--primary-clr);
+        top: 0;
+        right: 0;
+        z-index: 1;
+        transition: 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+        left: 0;
+        right: auto;
+    }
+}
