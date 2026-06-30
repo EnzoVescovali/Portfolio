@@ -16,8 +16,24 @@
 }
 
 h2 {
-    text-align: center;
+    margin: auto;
     font-size: 1.4rem;
+    margin-block-start: 2rem;
+    padding-block-end: .7rem;
+    position: relative;
+    width: fit-content;
+
+    &::after {
+        content: '';
+        width: 50%;
+        height: 2px;
+        position: absolute;
+        background-color: var(--secondary-clr);
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 2px;
+    }
 }
 
 @media (width >= 768px) {
