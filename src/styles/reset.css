@@ -44,6 +44,11 @@ svg {
   display: block;
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
