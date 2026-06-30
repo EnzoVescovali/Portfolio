@@ -32,11 +32,12 @@ input {
   border: none;
   border-bottom: 2px solid #000;
   width: 100%;
+  padding-block-end: .3rem;
   margin-block-end: 2rem;
 }
 
 input:focus + label {
-  color: var(--clr-primary);
+  color: var(--secondary-clr);
 }
 
 input:required + label::after {
@@ -58,7 +59,7 @@ textarea {
 }
 
 textarea:focus {
-  border: 2px solid #7d2ae8;
+  border: 2px solid var(--secondary-clr);
 }
 
 input,
@@ -70,7 +71,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-bottom: 2px solid #7d2ae8;
+  border-bottom: 2px solid var(--secondary-clr);
 }
 
 input::-webkit-outer-spin-button,
@@ -108,42 +109,14 @@ input[type="number"] {
   position: relative;
 }
 
-button {
-  border: none;
-  background-color: var(--clr-primary);
-  padding: 0.8em 1.5em;
-  color: var(--clr-neutral-lgt);
-  cursor: pointer;
-  border-radius: var(--br-btn);
-  transition: 0.3s ease-out;
-}
 
-button:hover {
-  border-radius: 35px;
-}
+
 
 .btnContainer {
   display: flex;
   gap: 2rem;
   justify-content: center;
   flex-direction: row-reverse;
-}
-
-.fa-paper-plane,
-.fa-trash {
-  margin-inline-end: 1rem;
-}
-
-.resetBtn {
-  color: var(--clr-primary);
-  background-color: transparent;
-  border: 2px solid var(--clr-primary);
-  transition: 0.3s ease-out;
-}
-
-.resetBtn:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-neutral-lgt);
 }
 
 @media (width > 900px) {
