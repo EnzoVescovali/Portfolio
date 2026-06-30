@@ -1,12 +1,28 @@
 import React from "react";
 import "./contact.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { useForm, ValidationError } from '@formspree/react';
+import { toast } from "react-toastify";
+import { useEffect, useRef } from "react";
 
 const Contact = () => {
+  const formRef = useRef(null);
+  const [state, handleSubmit, reset] = useForm("mwvdbpzb");
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Message envoyé");
+      formRef.current?.reset();
+      reset();
+    }
+  }, [state.succeeded, reset]);
   return (
     <>
         <section className="sectionContact" id="contact">
             <h2>Contact</h2>
-            <form action="">
+            <form ref={formRef} onSubmit={handleSubmit}>
                 <div className="formContainer">
                   <div className="formItem">
                     <input
@@ -14,7 +30,7 @@ const Contact = () => {
                       name="nom"
                       placeholder="Entrez votre nom..."
                       required
-                      pattern="[A-Za-z-]{3,30}"
+                      pattern="^[A-Za-zÀ-ÿ' -]{3,30}"
                     />
                     <label>Nom</label>
                   </div>
@@ -24,7 +40,7 @@ const Contact = () => {
                       name="prenom"
                       placeholder="Entrez votre prénom..."
                       required
-                      pattern="[A-Za-z-]{3,30}"
+                      pattern="^[A-Za-zÀ-ÿ' -]{3,30}"
                     />
                     <label>Prénom</label>
                   </div>
@@ -34,7 +50,6 @@ const Contact = () => {
                       name="email"
                       placeholder="Entrez votre email..."
                       required
-                      pattern="[A-Za-z0-9._-]+@[A-Za-z]+\.[A-Za-z]{2,}"
                     />
                     <label>Email</label>
                   </div>
@@ -47,7 +62,6 @@ const Contact = () => {
                     />
                     <label>Objet</label>
                   </div>
-                  
                 </div>
                 <div className="formItem textareaContainer">
                   <label>Message</label>
@@ -60,19 +74,32 @@ const Contact = () => {
                     className="textarea"
                   />
                 </div>
-                <div className="btnContainer">
-                  <div className="btn">
-                    <button type="submit">
-                      <i className="fa-regular fa-paper-plane" aria-hidden="true"></i>
-                      Envoyer
-                    </button>
-                  </div>
-                  <div className="btn">
-                    <button type="reset" className="resetBtn">
-                      <i className="fa-solid fa-trash" aria-hidden="true"></i>
+                <div className="buttonsContainer">
+                  <button type="reset" className="btn btnSecondary">
+                    <span className="btnContent btnDefault">
                       Tout supprimer
-                    </button>
-                  </div>
+                      <FontAwesomeIcon icon={faTrashCan} className='heroIcon'/>
+                    </span>
+                    <span className="btnContent btnHover" aria-hidden="true">
+                      Tout supprimer
+                      <FontAwesomeIcon icon={faTrashCan} className='heroIcon'/>
+                    </span>
+                  </button>
+                  <input type="hidden" name="_captcha" value="false" />
+                  <button
+                    type="submit"
+                    className="btn btnPrimary"
+                    disabled={state.submitting}
+                  >
+                    <span className="btnContent btnDefault">
+                      Envoyer
+                      <FontAwesomeIcon icon={faPaperPlane} className='heroIcon'/>
+                    </span>
+                    <span className="btnContent btnHover" aria-hidden="true">
+                      Envoyer
+                      <FontAwesomeIcon icon={faPaperPlane} className='heroIcon'/>
+                    </span>
+                  </button>
                 </div>
             </form>
         </section>
