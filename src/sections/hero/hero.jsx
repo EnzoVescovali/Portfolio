@@ -3,9 +3,7 @@ import TextHero from '../../components/textHero/textHero'
 import Modal from '../../components/modal/modal'
 import './hero.css'
 import '../../styles/button.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye } from '@fortawesome/free-solid-svg-icons'
-import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import { FaEye, FaFileDownload  } from "react-icons/fa"
 
 const hero = () => {
   const [showModal, setShowModal] = useState(false)
@@ -22,21 +20,21 @@ const hero = () => {
               <a href="../../public/CV_Enzo_Vescovali.pdf" download className='btn btnSecondary'>
                 <span className="btnContent btnDefault">
                   Telecharger mon CV 
-                  <FontAwesomeIcon icon={faDownload} size="xl" className='heroIcon'/>
+                  <FaFileDownload size={22} />
                 </span>
                 <span className="btnContent btnHover" aria-hidden="true">
                   Telecharger mon CV 
-                  <FontAwesomeIcon icon={faDownload} size="xl" className='heroIcon'/>
+                  <FaFileDownload size={22} />
                 </span>
               </a>
               <button onClick={() => setShowModal(true)} className='btn btnPrimary'>
                 <span className="btnContent btnDefault">
                   Voir mon CV
-                  <FontAwesomeIcon icon={faEye} size="xl" className='heroIcon'/>
+                  <FaEye size={22} />
                 </span>
                 <span className="btnContent btnHover" aria-hidden="true">
                   Voir mon CV
-                  <FontAwesomeIcon icon={faEye} size="xl" className='heroIcon'/>
+                  <FaEye size={22} />
                 </span>
               </button>
           </div>
