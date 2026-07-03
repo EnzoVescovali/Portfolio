@@ -1,8 +1,5 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { faBehance } from '@fortawesome/free-brands-svg-icons'
+import { FaGithub, FaLinkedin, FaBehance } from "react-icons/fa"
 import './footer.css'
 
 const year = new Date().getFullYear()
@@ -12,13 +9,13 @@ const Footer = () => {
     <footer>
       <div className="icons">
           <a href="https://github.com/EnzoVescovali" target="_blank" rel="noopener noreferrer" className="icon">
-            <FontAwesomeIcon icon={faGithubAlt} size="xl"/>
+            <FaGithub size={22} />
           </a>
           <a href="https://www.linkedin.com/in/enzovescovali" target="_blank" rel="noopener noreferrer" className="icon">
-            <FontAwesomeIcon icon={faLinkedinIn} size="xl"/>
+            <FaLinkedin size={22} />          
           </a>
           <a href="https://www.behance.net/vipedzn" target="_blank" rel="noopener noreferrer" className="icon">
-            <FontAwesomeIcon icon={faBehance} size="xl"/>
+            <FaBehance size={22} />
           </a>
       </div>
       <p>©{year} <span className="footerPseudo">Vipe</span>. All rights reserved.</p>
