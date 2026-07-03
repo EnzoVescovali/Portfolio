@@ -6,6 +6,7 @@ footer {
 
     span {
         color: var(--secondary-clr);
+        font-weight: 600;
     }
 }
 
@@ -64,4 +65,5 @@ footer {
         transform: rotate(-45deg);
     }
 }
+
 
