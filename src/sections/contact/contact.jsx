@@ -1,9 +1,8 @@
 import React from "react";
 import "./contact.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { useForm, ValidationError } from '@formspree/react';
+import { IoIosSend } from "react-icons/io";
+import { FaTrashAlt } from "react-icons/fa";
+import { useForm } from '@formspree/react';
 import { toast } from "react-toastify";
 import { useEffect, useRef } from "react";
 
@@ -78,11 +77,11 @@ const Contact = () => {
                   <button type="reset" className="btn btnSecondary">
                     <span className="btnContent btnDefault">
                       Tout supprimer
-                      <FontAwesomeIcon icon={faTrashCan} className='heroIcon'/>
+                      <FaTrashAlt size={22} />
                     </span>
                     <span className="btnContent btnHover" aria-hidden="true">
                       Tout supprimer
-                      <FontAwesomeIcon icon={faTrashCan} className='heroIcon'/>
+                      <FaTrashAlt size={22} />
                     </span>
                   </button>
                   <input type="hidden" name="_captcha" value="false" />
@@ -93,11 +92,11 @@ const Contact = () => {
                   >
                     <span className="btnContent btnDefault">
                       Envoyer
-                      <FontAwesomeIcon icon={faPaperPlane} className='heroIcon'/>
+                      <IoIosSend size={22} />
                     </span>
                     <span className="btnContent btnHover" aria-hidden="true">
                       Envoyer
-                      <FontAwesomeIcon icon={faPaperPlane} className='heroIcon'/>
+                      <IoIosSend size={22} />
                     </span>
                   </button>
                 </div>
