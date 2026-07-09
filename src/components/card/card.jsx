@@ -2,7 +2,6 @@ import './card.css'
 
 const Card = ({ project, title, image, link, tag = [], onOpen }) => {
   const handleClick = (e) => {
-    // On veut ouvrir la modal au click et ne pas naviguer.
     e.preventDefault()
     onOpen?.(project)
   }
@@ -17,7 +16,7 @@ const Card = ({ project, title, image, link, tag = [], onOpen }) => {
     >
       <article>
         <div className="imgWrapper">
-          <img src={image} alt="" />
+          <img src={`${import.meta.env.BASE_URL}${image}`} alt={title} />
         </div>
 
         <div className="test">
