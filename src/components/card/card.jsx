@@ -16,7 +16,10 @@ const Card = ({ project, title, image, link, tag = [], onOpen }) => {
     >
       <article>
         <div className="imgWrapper">
-          <img src={`${import.meta.env.BASE_URL}${image}`} alt={title} />
+          <img
+            src={`${import.meta.env.BASE_URL}${image?.replace(/^\//, '')}`}
+            alt={title}
+          />
         </div>
 
         <div className="test">

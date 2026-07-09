@@ -88,7 +88,7 @@ const ProjectDetailsModal = ({ isOpen, onClose, project }) => {
           <div className="projectModalImageWrap">
             <img
               className="projectModalImage"
-              src={project.image}
+              src={`${import.meta.env.BASE_URL}${project?.image?.replace(/^\//, '')}`}
               alt={project.title}
             />
           </div>
