@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Kasa",
-    "image": "/kasa.webp",
+    "image": "kasa.webp",
     "github": "https://github.com/EnzoVescovali/Kasa",
     "tag": ["React", "SPA"],
     "stack": ["React", "React Router", "Sass"],
@@ -15,7 +15,7 @@
   {
     "id": 2,
     "title": "Sophie Bluel",
-    "image": "/sophie-buel.webp",
+    "image": "sophie-buel.webp",
     "github": "https://github.com/EnzoVescovali/sophie-bluel",
     "tag": ["JavaScript", "API"],
     "stack": ["HTML", "CSS", "JavaScript", "API REST"],
@@ -28,7 +28,7 @@
   {
     "id": 3,
     "title": "Ohmyfood",
-    "image": "/ohmyfood.webp",
+    "image": "ohmyfood.webp",
     "github": "https://github.com/EnzoVescovali/ohmyfood",
     "tag": ["HTML", "CSS", "Animations"],
     "stack": ["HTML", "CSS", "Sass"],
