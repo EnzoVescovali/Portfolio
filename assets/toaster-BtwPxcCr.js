@@ -1,0 +1,1 @@
+import{t as e}from"./index-sY60f-MO.js";import{t}from"./dist-BG9VfFPN.js";var n=e(),r=()=>(0,n.jsx)(t,{position:`bottom-right`,autoClose:3e3});export{r as default};
