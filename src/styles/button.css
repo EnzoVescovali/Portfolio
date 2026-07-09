@@ -15,7 +15,9 @@
 .btnContent {
     grid-area: 1 / 1;
     display: inline-flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 0.7rem;
     position: relative;
     z-index: 2;
@@ -23,6 +25,12 @@
     transition:
         opacity 0.2s ease-in-out,
         transform 0.3s ease-in-out;
+}
+
+.btnIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btnDefault {
