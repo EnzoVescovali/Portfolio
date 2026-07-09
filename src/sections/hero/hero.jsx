@@ -12,9 +12,10 @@ const hero = () => {
         <section className="sectionHero" id="hero">
           <TextHero />
           <p>
-              Bienvenue sur mon portfolio de développement web.
-              Je suis Enzo Vescovali, développeur front-end passionné par la création d’expériences web modernes, fluides et engageantes.
-              Explorez mes projets et découvrez mon approche du développement web en tant que développeur junior, entre design, performance et souci du détail.
+            Je suis Enzo Vescovali, développeur Front-End passionné par la création d'interfaces web modernes, fluides et engageantes.
+            on chemin jusqu'au développement est loin d'être linéaire : mise en rayon, toilettage, coiffure, secrétariat… j'explorais. C'est en aidant ma sœur sur un devoir de code que tout a basculé un week-end entier passé à apprendre, et j'avais trouvé ce que je voulais faire. J'ai suivi une formation Développeur Web Frontend chez OpenClassrooms pour en faire mon métier.
+            on stack tourne autour de HTML, CSS, React et Git/GitHub. Curieux et rigoureux, je construis des interfaces pensées aussi bien pour l'utilisateur que pour le développeur qui relira le code. Ce portfolio en est la preuve concrète : conçu de A à Z en autonomie, il représente mon premier projet complet, de la structure au déploiement.
+            e suis à la recherche d'un CDD pour découvrir le rythme et les enjeux du développement en entreprise. À plus long terme, je prévois d'apprendre un framework backend, d'approfondir Vue.js et de me lancer progressivement en freelance.
           </p>
           <div className="buttonsContainer">
               <a href="../../public/CV_Enzo_Vescovali.pdf" download className='btn btnSecondary'>
