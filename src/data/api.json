@@ -1,23 +1,41 @@
 [
-    {
-        "id": 1,
-        "title": "Kasa",
-        "image": "../public/kasa.webp",
-        "link": "https://github.com/EnzoVescovali/Kasa",
-        "tag":["React"]
-    },
-    {
-        "id": 2,
-        "title": "Ohmyfood",
-        "image": "../public/ohmyfood.webp",
-        "link": "https://github.com/EnzoVescovali/ohmyfoodOnline",
-        "tag":["Css", "Animation"]
-    },
-    {
-        "id": 3,
-        "title": "Kasa",
-        "image": "../public/kasa.webp",
-        "link": "https://github.com/EnzoVescovali/Kasa",
-        "tag":["React"]
-    }
+  {
+    "id": 1,
+    "title": "Kasa",
+    "image": "/kasa.webp",
+    "github": "https://github.com/EnzoVescovali/Kasa",
+    "tag": ["React", "SPA"],
+    "stack": ["React", "React Router", "Sass"],
+    "skills": ["Composants réutilisables", "Routing", "Responsive design"],
+    "context": "Refonte d’une plateforme de location immobilière en application React, avec une navigation plus fluide et une structure moderne.",
+    "objectives": "Mettre en place une SPA avec routing dynamique et construire une interface claire à partir de composants réutilisables.",
+    "results": "Application rapide et agréable à utiliser, avec une navigation sans rechargement et une structure de composants propre.",
+    "improvements": "Connecter l’application à une API réelle et ajouter des fonctionnalités comme la gestion des utilisateurs ou des favoris."
+  },
+  {
+    "id": 2,
+    "title": "Sophie Bluel",
+    "image": "/sophie-buel.webp",
+    "github": "https://github.com/EnzoVescovali/sophie-bluel",
+    "tag": ["JavaScript", "API"],
+    "stack": ["HTML", "CSS", "JavaScript", "API REST"],
+    "skills": ["Manipulation du DOM", "Requêtes API", "Authentification"],
+    "context": "Création du front-end d’un portfolio d’architecte connecté à une API pour gérer dynamiquement les projets.",
+    "objectives": "Afficher une galerie filtrable, gérer une connexion admin et permettre l’ajout ou la suppression de contenus.",
+    "results": "Interface dynamique entièrement connectée à l’API, avec filtres, gestion des projets et authentification fonctionnelle.",
+    "improvements": "Améliorer la gestion des erreurs, ajouter la modification des projets et renforcer l’accessibilité globale."
+  },
+  {
+    "id": 3,
+    "title": "Ohmyfood",
+    "image": "/ohmyfood.webp",
+    "github": "https://github.com/EnzoVescovali/ohmyfood",
+    "tag": ["HTML", "CSS", "Animations"],
+    "stack": ["HTML", "CSS", "Sass"],
+    "skills": ["Animations CSS", "Responsive design", "Intégration UI"],
+    "context": "Intégration d’une interface mobile-first pour une application de réservation de menus dans des restaurants gastronomiques.",
+    "objectives": "Reproduire fidèlement une maquette en mettant l’accent sur les animations et l’expérience utilisateur.",
+    "results": "Interface fluide avec animations soignées, transitions interactives et design responsive adapté aux mobiles.",
+    "improvements": "Ajouter une version JavaScript pour rendre l’application interactive et intégrer une gestion de données dynamique."
+  }
 ]
