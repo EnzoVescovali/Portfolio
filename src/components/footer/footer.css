@@ -53,7 +53,7 @@ footer {
     transition: 0.2s ease-in-out;
 
     &:not(:last-child) {
-        margin-right: 7rem;
+        margin-right: 4rem;
     }
 
     &:hover {
@@ -67,3 +67,8 @@ footer {
 }
 
 
+@media (width > 500px) {
+    .icon:not(:last-child) {
+        margin-right: 7rem;
+    }
+}
