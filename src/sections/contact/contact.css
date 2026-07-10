@@ -13,18 +13,11 @@ form {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  margin-inline: 1rem;
+  padding-inline: 1rem;
 }
 
 label {
   font-weight: 600;
-}
-
-label:not(.radioLabel) {
-  position: absolute;
-  top: -2rem;
-  pointer-events: none;
-  font-size: 1rem;
 }
 
 input {
@@ -84,33 +77,9 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.radio {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.radioContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.2rem;
-  width: fit-content;
-}
-
-.radioContainer:first-child {
-  gap: 4.75rem;
-}
-
-.radioContainer > * {
-  margin-block: auto;
-}
-
 .formItem {
   position: relative;
 }
-
-
-
 
 .btnContainer {
   display: flex;
