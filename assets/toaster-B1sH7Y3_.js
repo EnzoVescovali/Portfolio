@@ -1,1 +1,0 @@
-import{t as e}from"./index-Ck_izrrD.js";import{t}from"./dist-T7qNLG76.js";var n=e(),r=()=>(0,n.jsx)(t,{position:`bottom-right`,autoClose:3e3});export{r as default};
