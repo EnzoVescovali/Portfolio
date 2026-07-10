@@ -3,6 +3,7 @@ p {
     margin: auto;
     padding-block: 2rem;
     text-align: center;
+    padding-inline: 1rem;
 }
 
 .heroIcon {
