@@ -24,6 +24,7 @@ const Contact = () => {
             <form ref={formRef} onSubmit={handleSubmit}>
                 <div className="formContainer">
                   <div className="formItem">
+                    <label>Nom
                     <input
                       type="text"
                       name="nom"
@@ -31,9 +32,10 @@ const Contact = () => {
                       required
                       pattern="^[A-Za-zÀ-ÿ' -]{3,30}"
                     />
-                    <label>Nom</label>
+                    </label>
                   </div>
                   <div className="formItem">
+                    <label>Prénom
                     <input
                       type="text"
                       name="prenom"
@@ -41,29 +43,31 @@ const Contact = () => {
                       required
                       pattern="^[A-Za-zÀ-ÿ' -]{3,30}"
                     />
-                    <label>Prénom</label>
+                    </label>
                   </div>
                   <div className="formItem">
+                    <label>Email
                     <input
                       type="email"
                       name="email"
                       placeholder="Entrez votre email..."
                       required
                     />
-                    <label>Email</label>
+                    </label>
                   </div>
                   <div className="formItem">
+                    <label>Objet
                     <input
                       type="text"
                       name="objet"
                       placeholder="Entrez l'objet de votre message..."
                       required
                     />
-                    <label>Objet</label>
+                    </label>
                   </div>
                 </div>
                 <div className="formItem textareaContainer">
-                  <label>Message</label>
+                  <label>Message
                   <textarea
                     name="message"
                     cols="30"
@@ -72,6 +76,7 @@ const Contact = () => {
                     required
                     className="textarea"
                   />
+                  </label>
                 </div>
                 <div className="buttonsContainer">
                   <button type="reset" className="btn btnSecondary">
