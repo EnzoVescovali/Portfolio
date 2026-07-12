@@ -18,7 +18,7 @@ const hero = () => {
             e suis à la recherche d'un CDD pour découvrir le rythme et les enjeux du développement en entreprise. À plus long terme, je prévois d'apprendre un framework backend, d'approfondir Vue.js et de me lancer progressivement en freelance.
           </p>
           <div className="buttonsContainer">
-              <a href="../../public/CV_Enzo_Vescovali.pdf" download className='btn btnSecondary'>
+              <a href="./public/CV-2023-full-screen.pdf" download className='btn btnSecondary'>
                 <span className="btnContent btnDefault">
                   Telecharger mon CV 
                   <FaFileDownload size={22} />
