@@ -1,1 +1,0 @@
-import{t as e}from"./index-C08EqQgs.js";import{t}from"./dist-DrBSkANA.js";var n=e(),r=()=>(0,n.jsx)(t,{position:`bottom-right`,autoClose:3e3});export{r as default};
